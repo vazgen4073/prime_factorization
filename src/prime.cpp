@@ -23,30 +23,12 @@ bool IsNumberPrime(int number)
 
 
     for (int i = 3; i <= number / i; i += 2) {
- 
- 
         if (number % i == 0) {
             return false;
         }
     }
     return true;
 }
-
-
-
-// bool IsNumberPrime(int number) {
-//     if (number < 2) return false;   // Reject negatives, 0, and 1
-//     if (number == 2) return true;   // Handle smallest prime
-//     if (number % 2 == 0) return false; // Reject even numbers
-
-//     // Check divisibility by odd numbers up to sqrt(number)
-//     for (int i = 3; i <= number / i; i += 2) {
-//         if (number % i == 0) {
-//             return false; // Found a divisor
-//         }
-//     }
-//     return true; // No divisors found
-// }
 
  
 /// @brief  The function returns a collection of integers which 
